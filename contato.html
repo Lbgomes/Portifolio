@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contato.css">
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+		<div class="logo">
+			<h4>Murilo Gomes</h4>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#" class="links">Projetos</a></li>
+			<li><a href="/contato.html" class="links">Contato</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+    </nav>
+    
+    <!-- Make sure you don't change the form action-->
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <!-- Replace with accesKey sent to your email -->
+        <input type="hidden" name="accessKey" value="86fbf531-19c0-4e02-8f35-84bec305b1cb"> <!-- Required -->
+        <label for="name">Digite seu nome:</label>
+        <input type="text" name="name"> <!-- Optional -->
+        <label for="name">Digite o título do email:</label>
+        <input type="text" name="subject"> <!-- Optional -->
+        <label for="name">Digite seu email:</label>
+        <input type="text" name="email"> <!-- Optional -->
+        <label for="name">Digite seu telefone:</label>
+        <input type="text" name="phone"> <!-- Optional -->
+        <textarea name="message"></textarea> <!-- Optional -->
+        <!-- If you want replyTo to be set to specific email -->    
+        <!-- If you want form to redirect to a specific url after submission -->
+        <input type="hidden" name="redirectTo" value="http://localhost:5500/contato.html"> <!-- Optional -->
+        <input type="submit" value="Submit" />
+    </form>
+    </form>
+</body>
+</html>
