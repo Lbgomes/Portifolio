@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/jpg" href="/imgs/code-s-slash-line.svg" />
+	<title>Portifólio Murilo Gomes - Desenvolvedor Jr</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="index.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<h4>Murilo Gomes</h4>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#" class="links">Projetos</a></li>
+			<li><a href="#" class="links">Contato</a></li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+	<div class="imagem">
+		<img src="/imgs/1605305041430.jfif" class="image" alt="">
+		<div class="typewriter">
+			<h1 class="murilo">Oi, eu sou o Murilo!</h1>
+		</div>
+		<h2 class="description">Desenvolvedor Frontend, Back-End e Mobile</h2>
+		<p class="developer">Um Desenvolvedor Web full stack focado no front-end</p>
+	</div>
+
+	<div class="next-page">
+
+		<button class="see">Veja mais!</button>
+		<div class="box">
+
+			<span></span>
+			<span></span>
+			<span></span>
+
+		</div>
+	</div>
+
+
+	<div class="">
+		<h1>Meus Projetos</h1>
+		
+	</div>
+	<!-- <div class="typewriter">
+		<h1>Murilo Luiz Barbosa Gomes.</h1>
+	</div> -->
+
+
+
+
+	<script>
+		function navSlide() {
+			const burger = document.querySelector(".burger");
+			const nav = document.querySelector(".nav-links");
+			const navLinks = document.querySelectorAll(".nav-links li");
+
+			burger.addEventListener("click", () => {
+				//Toggle Nav
+				nav.classList.toggle("nav-active");
+
+				//Animate Links
+				navLinks.forEach((link, index) => {
+					if (link.style.animation) {
+						link.style.animation = ""
+					} else {
+						link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+					}
+				});
+				//Burger Animation
+				burger.classList.toggle("toggle");
+			});
+
+		}
+
+		navSlide();
+	</script>
+</body>
+
+</html>

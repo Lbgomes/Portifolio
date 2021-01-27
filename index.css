@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL STYLES */
+body {
+
+    padding-top: 5em;
+    
+    
+  }
+  
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    cursor: default;
+    margin-left: 3em;
+    
+}
+
+
+.links::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 12px;
+    background-color:#fc2626;
+    transition: width .3s;
+}
+
+.links:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+.links:hover{
+    color:#fa3434;
+    transition: .3s;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-right: 3em;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    margin-right:1em;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    border-radius: 12px;
+
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: white;
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: white;
+}
+
+.imagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    background: rgb(146, 142, 142);
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+
+}
+
+.murilo{
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter{
+
+    padding-top: 1em;
+}
+
+.typewriter h1 {
+    margin-top:20em;
+    color: black;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+    typing 1.8s steps(30, end),
+    blink-caret .5s step-end infinite;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+.description{
+    margin-top: 2em;
+    max-width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.developer{
+    margin-top:2em;
+    font-size:20px;
+    font-weight: 500;
+max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.next-page{
+    display: flex;
+    flex-direction: column;
+}
+
+.see{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color: #0c0c0c;
+    color: white;
+    align-self: center;
+    margin-top: 7em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    transform: rotate(45deg);
+    margin:-3px;
+    animation: animate 1s infinite;
+}
+
+.box span:nth-child(2)
+{
+    animation-delay: -0.2s;
+}
+.box span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 55%;
+        margin-right: 0em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: fixed;
+        right: 0px;
+        height: 100vh;
+        top: 0;
+        background-color: #131315;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    
+    .nav-links li {
+        opacity: 0;
+        margin: 1em;
+
+    }
+    .nav-links a {
+        color: white;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .description{
+        margin-top: 1em;
+    }
+
+    .see{
+        margin-top:2em;
+    }
+
+.nav-active {
+        transform: translateX(0%);
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-7px, -7px);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+}
+
+}
