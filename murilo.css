@@ -134,7 +134,7 @@ p {
 
 .imagem {
     max-width: 400px;
-    width: 80%;
+    width: 90%;
 }
 
 .murilo {
@@ -166,6 +166,7 @@ p {
     .description {
         margin-top: 1em;
         max-width: 390px;
+        margin-left: 1em;
     }
     .imagem {
         align-self: center;
