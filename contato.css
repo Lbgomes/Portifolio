@@ -188,7 +188,7 @@ textarea {
 }
 
 .icons {
-    margin-top: 2em;
+    margin-top: 10%;
 }
 
 
@@ -196,7 +196,7 @@ textarea {
 
 @media screen and (max-width: 1024px) {
     .nav-links {
-        width: 55%;
+        width: 25%;
         margin-right: 0em;
     }
 }
