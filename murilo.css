@@ -135,6 +135,13 @@ p {
 .imagem {
     max-width: 400px;
     width: 90%;
+    transition: 1s;
+}
+
+.imagem:hover {
+    transition: 1s;
+    max-width: 500px;
+    width: 90%;
 }
 
 .murilo {
