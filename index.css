@@ -7,7 +7,7 @@
 }
 
 body {
-    padding-top: 5em;
+    padding-top: 3.5em;
     display: grid;
     place-items: center;
     min-height: 100vh;
@@ -26,6 +26,7 @@ nav {
     min-height: 8vh;
     color: black;
     font-family: "Poppins", sans-serif;
+    z-index: 999;
 }
 
 .logo {
@@ -190,7 +191,7 @@ nav {
 }
 
 .developer {
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 20px;
     font-weight: 500;
     max-width: 500px;
@@ -228,6 +229,7 @@ nav {
     flex-direction: column;
     align-items: center;
     margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 .box span {
@@ -268,7 +270,7 @@ nav {
 /**                                                 Meus projetos                                                  **/
 
 .projects {
-    margin-top: 2em;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -290,10 +292,18 @@ nav {
 }
 
 .cor {
-    background-color: #234;
-    border-radius: 12px;
     padding: 1em;
     margin: 2em;
+    border-radius: 12px;
+    -webkit-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
+    box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
+}
+
+.cor:hover {
+    -webkit-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
+    box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
 }
 
 .game {
@@ -321,6 +331,7 @@ nav {
     -webkit-animation: gameName 300ms forwards;
     animation: gameName 300ms forwards;
     font-family: "Poppins", sans-serif;
+    color: #0c0c0c;
 }
 
 .game:hover .rank {
@@ -335,6 +346,14 @@ nav {
 .front {
     transition: transform 250ms;
     z-index: 100;
+}
+
+.front:hover {
+    padding: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
+    box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0);
 }
 
 .front .stats {
@@ -376,7 +395,6 @@ nav {
 }
 
 .back {
-    background: #234;
     position: absolute;
     padding: 2em;
     border-radius: 12px;
@@ -389,6 +407,9 @@ nav {
     transition: transform 250ms, opacity 125ms;
     transform: scale(0.2, 0.9);
     height: 231px;
+    -webkit-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
+    box-shadow: 10px 10px 52px -9px rgba(0, 0, 0, 0.13);
 }
 
 .more-info {
@@ -420,22 +441,25 @@ nav {
     display: block;
 }
 
+.btns {
+    display: flex;
+}
+
 .btn {
-    background: #1a1a1a;
-    color: white;
+    color: #1a1a1a;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    padding: 0.5em 1.25em;
+    padding: 1px;
     border-radius: 100vw;
-    margin: 0 0 1em 0;
+    margin: 0 0 0em 0;
     font-family: "Poppins", sans-serif;
-    transition: 0.5s;
-    margin-top: 0.8em;
+    margin-top: 0.0em;
 }
 
 .btn:hover {
-    background: #0c0c0c;
+    transition: 1s;
+    text-decoration: underline;
 }
 
 .game:hover .more-info {
@@ -677,12 +701,167 @@ nav {
 }
 
 
+/**                                                             Murilo                                                  **/
+
+#anchor2 {
+    margin-bottom: 2em
+}
+
+.texto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em;
+    width: 80%;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-content: space-evenly;
+}
+
+.foto-murilo {
+    max-width: 400px;
+    width: 90%;
+    transition: 1s;
+}
+
+.foto-murilo:hover {
+    transition: 1s;
+    max-width: 500px;
+    width: 90%;
+}
+
+.murilo {
+    font-weight: 700;
+    color: #1b1b1b;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.curriculo {
+    font-family: "Roboto", sans-serif;
+    color: #1b1b1b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/**                                         Form (Formulário de contato)                                                  **/
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 80%;
+}
+
+.formulario {
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+    cursor: default;
+    width: 100%;
+}
+
+.contact {
+    font-family: 'Commissioner', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    cursor: default;
+    font-weight: 800;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.input {
+    max-width: 500px;
+    width: 100%;
+    height: 35px;
+    border: 0.5px solid rgb(117, 117, 117);
+    border-radius: 2px;
+}
+
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.text {
+    height: 130px;
+}
+
+#botao {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1a1a1a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#botao:hover {
+    background-color: #0f0f0f;
+}
+
+.icons {
+    margin-top: 3%;
+}
+
+
 /**                                                 Responsividade                                                  **/
 
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 45%;
         margin-right: 0em;
+    }
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0em;
+        align-items: center;
+    }
+    .description {
+        margin-top: 1em;
+        max-width: 390px;
+        margin-left: 1em;
+    }
+    .foto-murilo {
+        align-self: center;
+    }
+    .foto-murilo:hover {
+        max-width: 400px;
+        width: 90%;
+        transition: 1.1s;
     }
 }
 
@@ -736,5 +915,11 @@ nav {
             opacity: 0;
             transform: rotate(45deg) translate(7px, 7px);
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .developer {
+        width: 80%
     }
 }
