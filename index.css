@@ -7,9 +7,8 @@
 }
 
 body {
-    padding-top: 2.8em;
+    padding-top: 67px;
     display: grid;
-    place-items: center;
     min-height: 100vh;
     font-family: 'SFPRODISPLAYREGULAR';
 }
@@ -24,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
+    min-height: 67px;
     color: #fff;
     font-family: "Poppins", sans-serif;
     z-index: 999;
@@ -37,7 +36,7 @@ nav {
     letter-spacing: 1.5px;
     font-size: 18px;
     cursor: default;
-    margin-left: 3em;
+    margin-left: 1em;
 }
 
 .links::after {
@@ -249,10 +248,12 @@ nav {
     .bg {
         flex-direction: column;
         height: 100%;
+        justify-content: space-around;
+        max-height: 650px;
     }
     .picture {
         margin-right: 0;
-        width: 100%;
+        width: 287px;
     }
     .bigCircle {
         width: 287px;
