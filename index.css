@@ -11,6 +11,7 @@ body {
     display: grid;
     min-height: 100vh;
     font-family: 'SFPRODISPLAYREGULAR';
+    background-color: #F6F6F6;
 }
 
 
@@ -157,10 +158,6 @@ nav {
     color: #C4A9FF;
 }
 
-.bg .content {
-    max-width: 754px;
-}
-
 .picture {
     height: 387px;
     width: 387px;
@@ -244,40 +241,6 @@ nav {
     margin-top: 2px;
 }
 
-@media(max-width: 1260px) {
-    .bg {
-        flex-direction: column;
-        height: 100%;
-        justify-content: space-around;
-        max-height: 650px;
-    }
-    .picture {
-        margin-right: 0;
-        width: 287px;
-    }
-    .bigCircle {
-        width: 287px;
-        height: 287px;
-    }
-    .mediumCircle {
-        width: 227px;
-        height: 227px;
-    }
-    .smallCircle {
-        width: 137px;
-        height: 137px;
-    }
-    .linkedin {
-        left: 90%;
-        top: -25%;
-        padding: 10px;
-    }
-    .bg {
-        padding-left: 0em;
-        padding: 1em 1em 0;
-    }
-}
-
 .projects {
     margin: 50px 0;
     flex-direction: column;
@@ -292,15 +255,15 @@ nav {
     align-self: center;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    row-gap: 2rem;
+    gap: 1rem;
 }
 
 .card {
     padding: 20px;
     background-color: #fff;
-    width: 500px;
+    width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 15px 7px rgba(0, 0, 0, 0.38);
+    box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.18);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -309,6 +272,8 @@ nav {
 .card>div>a {
     color: #000;
     font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .company {
@@ -329,6 +294,8 @@ nav {
 .imgProject {
     object-fit: cover;
     aspect-ratio: 5/3;
+    max-width: 517px;
+    width: 100%;
 }
 
 .card h1 {
@@ -343,6 +310,10 @@ nav {
 
 .card p {
     font-size: 14px;
+}
+
+.info>h2 {
+    display: flex;
 }
 
 #anchor2 {
@@ -377,12 +348,14 @@ nav {
     }
     .grid>.card img {
         aspect-ratio: 1/1;
+        margin-right: 3px;
+        border-radius: 100%;
     }
 }
 
 @media(max-width: 1050px) {
     .grid>.card {
-        width: 250px;
+        width: 100%;
         height: auto;
     }
     .grid>.card img {
@@ -452,5 +425,48 @@ nav {
     }
     .nav-active {
         transform: translateX(0%);
+    }
+}
+
+@media(max-width: 1260px) {
+    .bg {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        max-height: 650px;
+    }
+    .projects {
+        padding: 0 1em;
+    }
+    .picture {
+        margin-right: 0;
+        width: 287px;
+    }
+    .bigCircle {
+        width: 287px;
+        height: 287px;
+    }
+    .mediumCircle {
+        width: 227px;
+        height: 227px;
+    }
+    .smallCircle {
+        width: 137px;
+        height: 137px;
+    }
+    .linkedin {
+        left: 90%;
+        top: -25%;
+        padding: 10px;
+    }
+    .bg {
+        padding-left: 0em;
+        padding: 1em 1em 0;
+    }
+}
+
+@media(min-width: 820px) {
+    .bg .content {
+        max-width: 754px;
     }
 }
