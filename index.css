@@ -63,8 +63,8 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 30%;
-    margin-right: 3em;
+    width: 10%;
+    margin-right: 5%;
 }
 
 .nav-links li {
@@ -317,10 +317,6 @@ nav {
 
 .info>h2 {
     display: flex;
-}
-
-#anchor2 {
-    margin-bottom: 2em
 }
 
 @media(max-width: 1650px) {
