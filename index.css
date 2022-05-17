@@ -280,6 +280,7 @@ nav {
     width: 20px;
     aspect-ratio: 1/1;
     border-radius: 100%;
+    margin-right: 3px;
 }
 
 .third,
@@ -345,9 +346,6 @@ nav {
     .grid>.card {
         width: 300px;
         height: auto;
-    }
-    .grid>.card img {
-        margin-right: 3px;
     }
 }
 
