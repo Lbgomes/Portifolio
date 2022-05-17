@@ -151,7 +151,8 @@ nav {
 }
 
 .content p {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .content span {
@@ -255,7 +256,7 @@ nav {
     align-self: center;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    gap: 1rem;
+    gap: 4em;
 }
 
 .card {
@@ -263,7 +264,7 @@ nav {
     background-color: #fff;
     width: 100%;
     height: 100%;
-    box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.18);
+    box-shadow: 5px 8px 16px 5px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,7 +307,7 @@ nav {
 .card h2 {
     font-size: 18px;
     font-weight: 600;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .card p {
