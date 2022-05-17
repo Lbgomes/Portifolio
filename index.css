@@ -278,7 +278,7 @@ nav {
 }
 
 .company {
-    width: 20px;
+    width: 22px;
     aspect-ratio: 1/1;
     border-radius: 100%;
     margin-right: 3px;
@@ -305,9 +305,10 @@ nav {
 }
 
 .card h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin: 8px 0;
+    align-items: center;
 }
 
 .card p {
