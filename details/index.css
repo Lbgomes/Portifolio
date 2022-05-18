@@ -154,8 +154,10 @@ a {
 @media(max-width: 870px) {
     .imageMobile {
         display: block;
+        margin: 3rem 0;
     }
     .image {
+        display: none;
         width: 90%;
     }
 }
