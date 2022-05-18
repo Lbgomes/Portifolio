@@ -33,11 +33,14 @@ nav {
 }
 
 .logo {
-    color: #fff;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    cursor: default;
     margin-left: 5%;
+}
+
+.logo>a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
 }
 
 .links::after {

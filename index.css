@@ -33,11 +33,15 @@ nav {
 }
 
 .logo {
-    color: #fff;
-    letter-spacing: 1.5px;
-    font-size: 18px;
-    cursor: default;
     margin-left: 5%;
+}
+
+.logo>a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
 }
 
 .links::after {
@@ -260,7 +264,7 @@ nav {
 }
 
 .card {
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     background-color: #fff;
     width: 100%;
     height: 100%;
@@ -281,6 +285,7 @@ nav {
     font-size: 24px;
     text-decoration: none;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .company {
