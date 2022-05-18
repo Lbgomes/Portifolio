@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/details/index.css">
+    <link rel="shortcut icon" href="/imgs/code-s-slash-line.svg">
+
+    <title>Betablocks</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Murilo Gomes</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#anchor" class="links">Home</a></li>
+            <li><a href="#anchor2" class="links">Portfolio</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <img src="/imgs/Group 5.png" class="image" alt="">
+    <div class="info">
+        <div class="details">
+            <h1>The project</h1>
+            <p>Betablocks allow people to create their own marketplace to sell digital assets as NFTs. In that project, I've developed the entire landing page as per design, setup many components for the project and integrated it with firebase. Betablocks
+                allow people to create their own marketplace to sell digital assets as NFTs. In that project, I've developed the entire landing page as per design, setup many components for the project and integrated it with firebase.</p>
+        </div>
+        <div class="details">
+            <h1>My Role</h1>
+            <p>Betablocks allow people to create their own marketplace to sell digital assets as NFTs. In that project, I've developed the entire landing page as per design, setup many components for the project and integrated it with firebase. Betablocks
+                allow people to create their own marketplace to sell digital assets as NFTs. In that project, I've developed the entire landing page as per design, setup many components for the project and integrated it with firebase.</p>
+        </div>
+        <div class="details">
+            <h1>Tech Stack</h1>
+            <p>Next js, Typescript, tailwindcss</p>
+        </div>
+        <div class="details">
+            <h1>Links</h1>
+            <a href="">🔗 The project</a>
+        </div>
+    </div>
+    <script>
+        function navSlide() {
+            const burger = document.querySelector(".burger");
+            const nav = document.querySelector(".nav-links");
+            const navLinks = document.querySelectorAll(".nav-links li");
+
+            burger.addEventListener("click", () => {
+                //Toggle Nav
+                nav.classList.toggle("nav-active");
+
+                //Animate Links
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ""
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+                //Burger Animation
+                burger.classList.toggle("toggle");
+            });
+
+        }
+        navSlide();
+    </script>
+</body>
+
+</html>

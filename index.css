@@ -268,6 +268,12 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .card>div>a {
@@ -281,7 +287,7 @@ nav {
     width: 22px;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    margin-right: 3px;
+    margin-right: 8px;
 }
 
 .third,
@@ -313,6 +319,10 @@ nav {
 
 .card p {
     font-size: 14px;
+}
+
+.info {
+    padding-top: 12px;
 }
 
 .info>h2 {
