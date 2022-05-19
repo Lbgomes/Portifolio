@@ -295,6 +295,10 @@ nav {
     margin-right: 8px;
 }
 
+.date {
+    font-size: 14px
+}
+
 .third,
 .sixth {
     place-self: end;
