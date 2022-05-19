@@ -14,6 +14,11 @@ body {
     background-color: #F6F6F6;
 }
 
+@font-face {
+    font-family: 'SFPRODISPLAYREGULAR';
+    src: url(/font/SFPRODISPLAYREGULAR.OTF) format('opentype');
+}
+
 
 /**                                         navBar (Barra de navegação)                                                  **/
 
@@ -41,6 +46,7 @@ nav {
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.5px;
+    text-decoration: none;
 }
 
 .links::after {
@@ -123,11 +129,6 @@ nav {
 
 /**                                                 Conteúdo da página                                                  **/
 
-@font-face {
-    font-family: 'SFPRODISPLAYREGULAR';
-    src: url(/font/SFPRODISPLAYREGULAR.OTF) format('opentype');
-}
-
 .image {
     margin: 3rem 0;
     place-self: center;
@@ -152,6 +153,10 @@ nav {
 .details>p {
     line-height: 24px;
     color: #585858;
+}
+
+.fault {
+    text-decoration: line-through;
 }
 
 a {
